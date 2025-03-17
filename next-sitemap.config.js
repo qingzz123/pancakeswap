@@ -1,5 +1,5 @@
 module.exports = {
-    siteUrl: process.env.SITE_URL || 'https://ggg.dog',
-    generateRobotsTxt: true, // (optional)
-    // ...other options
+  siteUrl: process.env.SITE_URL || '',
+  generateRobotsTxt: true, // (optional)
+  // ...other options
 }

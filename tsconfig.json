@@ -1,6 +1,7 @@
 {
   "extends": "tsconfig/nextjs.json",
   "compilerOptions": {
+    "jsx": "preserve",
     "baseUrl": "src",
     "strictNullChecks": false,
     "noImplicitAny": false,
@@ -16,6 +17,6 @@
       "@pancakeswap/hooks": ["../packages/hooks/src/index.ts"]
     }
   },
-  "exclude": ["node_modules", "cypress"],
+  "exclude": ["node_modules", "cypress", "/apps/*"],
   "include": ["next-env.d.ts", "./src/**/*.ts", "./src/**/*.tsx"]
 }

@@ -10,7 +10,7 @@
     "analyze": "ANALYZE=true yarn build",
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
+    "start": "next dev",
     "test": "jest",
     "test:watch": "jest --watch",
     "test:config": "jest src/config/__tests__/ --testPathIgnorePatterns",

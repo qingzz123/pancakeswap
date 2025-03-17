@@ -4,7 +4,7 @@ const { withAxiom } = require('next-axiom')
 const withBundleAnalyzer = require('@next/bundle-analyzer')({
   enabled: process.env.ANALYZE === 'true',
 })
-const withTM = require('next-transpile-modules')
+const withTM = require('next-transpile-modules')(['@pancakeswap/uikit', '@pancakeswap/sdk'])
 
 const sentryWebpackPluginOptions = {
   // Additional config options for the Sentry Webpack plugin. Keep in mind that
@@ -25,13 +25,12 @@ const config = {
     styledComponents: true,
   },
   experimental: {
-    appDir: true,
     scrollRestoration: true,
     images: {
       allowFutureImage: true,
     },
   },
-  reactStrictMode: false,
+  reactStrictMode: true,
   swcMinify: true,
   images: {
     domains: ['static-nft.pancakeswap.com'],

@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://ggg.dog
+
+# Sitemaps
+Sitemap: https://ggg.dog/sitemap.xml

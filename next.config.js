@@ -138,4 +138,4 @@ const config = {
   },
 }
 
-module.exports = withBundleAnalyzer(withSentryConfig(withTM(withAxiom(config)), sentryWebpackPluginOptions))
+module.exports = withBundleAnalyzer(withSentryConfig(withTM(withAxiom(config))))
